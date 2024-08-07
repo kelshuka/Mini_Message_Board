@@ -1,11 +1,24 @@
 
-<form method="POST" action="/new">
-    <h1>text</h1>
-    <label for="name">User name:</label>
-    <input type="text" id="name" name="User">
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
 
-    <label for="message">Message:</label>
-    <input type="text" id="message" name="Text">
-
-    <button type="submit">Submit</button>
-</form>
+    <body>
+        <form method="POST" action="/new">
+            <h1>Message details</h1>
+            <section>
+                <label for="name">User name:</label>
+            <input type="text" id="name" name="User">
+            </section>
+            <p></p>
+            <section>
+                <label for="message">Message:</label>
+            <input type="text" id="message" name="Text">
+            </section>
+            <p></p> 
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

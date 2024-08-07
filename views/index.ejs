@@ -5,10 +5,20 @@
     </head>
     <body>
 
-        <%= title %>
-        <%- include('message', {messages: mainMessages}) %>
+        <main>
+            <section class="tiTle">
+                <%= title %>
+            </section>
+            <section class="container">
+                <%- include('message', {messages: mainMessages}) %>
+            </section>
+            
+            <section class="addMessage">
+                <a href="/new">Add new message </a>
+            </section>
+            
+        </main>
         
-        <a href="/new">Add new message </a>
     
     </body>
 </html>

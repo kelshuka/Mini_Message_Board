@@ -1,8 +1,13 @@
-
-<section>
-    <section>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+<body>
+    <section class="allMessage">
+        
         <% for (let i=0; i < messages.length; i++){ %>
-            <section>
+            <section class="oneMessage">
                 <section>
                     User: <span> <%= messages[i].user %> </span>
                 </section>
@@ -15,6 +20,8 @@
                     Date added: <span> <%= messages[i].added %> </span>
                 </section>
             </section>
-       <% } %>
+        <% } %>
+        
     </section>
-</section>
+</body>
+</html>

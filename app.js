@@ -30,7 +30,7 @@ const butts = [
 
 
 app.get("/", (req, res) => {
-    res.render("index", {title:"Mini Messageboard", mainMessages: messages});
+    res.render("index", {title:"Mini Message Board", mainMessages: messages});
 });
 
 // Add new message
