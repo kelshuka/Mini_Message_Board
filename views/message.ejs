@@ -8,16 +8,22 @@
         
         <% for (let i=0; i < messages.length; i++){ %>
             <section class="oneMessage">
-                <section>
-                    User: <span> <%= messages[i].user %> </span>
+                <section>          
+                    <section>
+                        <%= messages[i].user %> 
+                    </section>
+
+                    <section>
+                        <%= messages[i].text %> 
+                    </section>
+
+                    <section>
+                        <%= messages[i].added %> 
+                    </section>
                 </section>
 
-                <section>
-                    Message: <span> <%= messages[i].text %> </span>
-                </section>
-
-                <section>
-                    Date added: <span> <%= messages[i].added %> </span>
+                <section class="openMessage">
+                    <a href="/open/<%= i %>"> Open </a> 
                 </section>
             </section>
         <% } %>

@@ -24,6 +24,11 @@ indexRouter.get("/new", (req, res) => {
     res.render("form");
 });
 
+indexRouter.get("/open/:id", (req, res) => {
+    const message = messages[req.params.id];
+    res.render("open", { message });
+});
+
 
 indexRouter.post("/new", (req,res) => {
     const Text = req.body.Text;

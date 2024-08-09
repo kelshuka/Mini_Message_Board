@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opened Message</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section class="messageDetailsContainer">
+            <section class="messageDetails">
+                <section>
+                    User: <span> <%= message.user %> </span>
+                </section>
+
+                <section>
+                    Message: <span> <%= message.text %> </span>
+                </section>
+
+                <section>
+                    Date added: <span> <%= message.added %> </span>
+                </section>
+            </section>
+
+            <section class="backToMessages">
+                <a href="/"> Back to Messages </a></section>
+        </section>
+    </body>
+</html>

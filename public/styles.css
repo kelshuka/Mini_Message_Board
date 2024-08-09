@@ -34,6 +34,11 @@ main{
     padding: 9px 9px;
     margin: 8px 8px;
 }
+.oneMessage{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .tiTle{
     font-size: 34px;
@@ -48,7 +53,7 @@ main{
     margin: 0 auto;
     width: 150px;
     height: 30px;
-    background-color: rgb(29, 29, 194);
+    background-color: rgb(70, 64, 32);
     border-radius: 1vh;
     text-align: center;
     padding-top: 3px;
@@ -56,5 +61,31 @@ main{
 
 a {
     text-decoration: none;
-    color: white;
+    color: white; 
+}
+
+
+
+.openMessage{
+    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(99, 92, 54);
+    border-radius: 1vh;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 4px;
+}
+
+.messageDetailsContainer{
+    padding: 8px 0;
+    border: 1px solid rgb(105, 96, 96);
+    background-color: rgb(240, 235, 235);
+    border-radius: 1rem;
+    padding: 9px 9px;
+    margin: 8px 8px;
+}
+
+.messageDetails{
+    color: red;
 }
